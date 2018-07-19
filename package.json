@@ -6,21 +6,31 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/webpack",
+    "build": "source ./.env; node_modules/.bin/webpack",
     "deploy": "npm run build & surge dist",
     "dev": "npm run start",
     "postinstall": "npm run start",
-    "start": "node_modules/.bin/webpack-dev-server",
+    "start": "source ./.env; node_modules/.bin/webpack-dev-server",
     "start-env-example": "source ./.env || node_modules/.bin/webpack-dev-server"
   },
   "webpack": {
+    "env": {
+      "API_KEY": "$API_KEY"
+    },
     "entry": {
       "index.html": "./src/index.html",
       "index.js": "./src/index.js"
     }
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0"
+  },
   "devDependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",

@@ -13,11 +13,21 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 50px;
   padding: 0,
 }
 
 a {
   text-decoration: none;
   color: #333;
+}
+
+.input-group {
+  margin: 50px;
+}
+
+.form-control, 
+.btn {
+  padding: 10px;
+  font-size: 20px;
 }
