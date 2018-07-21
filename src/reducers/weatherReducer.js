@@ -1,6 +1,6 @@
-import FETCH_WEATHER from '../actions/fetchWeather'
+import { FETCH_WEATHER } from '../actions/fetchWeather'
 
-export default function(state = [], action) {
+export default function weatherReducer(state = [], action) {
   console.log("action received action")
   switch(action.type) {
     case FETCH_WEATHER: 
@@ -8,6 +8,7 @@ export default function(state = [], action) {
         ...state,
         action.payload.data,
       ]
-  }
-  return state
+    default: 
+      return state
+    }
 }

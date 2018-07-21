@@ -4,9 +4,9 @@ import React from "react"
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import createStoreWithMiddleware from './store'
 import App from './components/App'
 import rootReducer from "./reducers/index"
+import createStoreWithMiddleware from './store'
 
 
 ReactDOM.render((

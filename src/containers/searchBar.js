@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from "react"
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import fetchWeather from '../actions/fetchWeather'
 
 
-class SearchBar extends React.Component {
+class SearchBar extends Component {
   constructor(props) {
     super(props)
 
@@ -14,9 +14,7 @@ class SearchBar extends React.Component {
   }
 
   onInputChange(event) {
-    this.setState({
-      term: event.target.value
-    })
+    this.setState({ term: event.target.value })
   }
 
   onFormSubmit(event) {
@@ -53,10 +51,10 @@ export default connect(null, mapDispatchToProps)(SearchBar)
 
 
 
+
+
 // controlled field: a form elem where the value of an input is set by the state of the component (not redux level stata). You need to set your state whenever the input changes. 
 
 // when form elem used - press enter to submit - use onSubmit on form elem
 
 // mapDispatchToProps is always passed into connect as a 2nd argument
-
-// 5:13
