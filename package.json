@@ -25,6 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
+    "lodash": "^4.17.10",
     "react-redux": "^5.0.7",
     "react-sparklines": "^1.7.0",
     "redux": "^4.0.0",
