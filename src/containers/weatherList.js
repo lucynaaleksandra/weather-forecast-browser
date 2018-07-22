@@ -14,8 +14,8 @@ class WeatherList extends Component {
     // console.log(temps)
 
     return (
-      <tr>
-        <td key={name}>{name}</td>
+      <tr key={name}>
+        <td>{name}</td>
         <td><Chart data={temps} color='orange' units='K' /></td>
         <td><Chart data={pressures} color='green' units='hPa' /></td>
         <td><Chart data={humidities} color='black' units='%' /></td>
