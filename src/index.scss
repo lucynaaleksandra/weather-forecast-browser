@@ -9,10 +9,6 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-position: bottom right;
-  // background-image: url("https://i.imgur.com/zPe5TBg.png");
 }
 
 h1, h2 {
@@ -20,13 +16,9 @@ h1, h2 {
   padding: 0,
 }
 
-a {
-  text-decoration: none;
-  color: #333;
-}
-
 .input-group {
-  margin: 50px;
+  margin: 20px 120px;
+  width: 80%;
 }
 
 .form-control {
@@ -37,8 +29,8 @@ a {
 
 .btn {
   padding: 10px 20px;
+  margin: 20px;
   font-size: 20px;
-
 }
 
 .table {
@@ -47,23 +39,16 @@ a {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr, 1fr;
   grid-gap: 50px;
-  // border: 1px solid black;
 }
 
-th {
-  padding: 0 50px;
+th, td {
+  padding-right: 50px;
+  width: 250px;
+  vertical-align: middle !important;
+  text-align: center !important;
 }
 
-// td, th {
-//   vertical-align: middle !important;
-//   text-align: center !important;
-// }
-
-// svg {
-//   height: 150px;
-// }
-
-// td:first-of-type, td:first-of-type > div {
-//   height: 200px;
-//   width: 250px;
-// }
+td:first-of-type, td:first-of-type > div {
+  height: 200px;
+  width: 250px;
+}

@@ -1,5 +1,9 @@
 import React from 'react'
-import _ from 'lodash'
+import {
+  round,
+  sum,
+} from 'lodash'
+
 import { 
   Sparklines, 
   SparklinesLine, 
@@ -8,7 +12,7 @@ import {
 
 
 function average(data) {
-  return _.round(_.sum(data)/data.length)
+  return round(sum(data)/data.length)
 }
 
 export default (props) => {
